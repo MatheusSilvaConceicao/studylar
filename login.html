@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/studylar-master/login.css">
+    <link rel="stylesheet" href="/studylar/login.css">
     <title>Home</title>
 </head>
 
@@ -13,21 +13,29 @@
         <section>
             <img src="" alt="">
         </section>
+        <h1 id="Login">Login</h1>
         <form action="">
+            <p id="email" >E-mail</p>
 
-            <p class="Login">Login</p>
             <input type="email" id="email" placeholder="email" required>
-            <span id="emailError" class="error">email é obrigatório</span>
-            <p>senha</p>
+            <!-- <span id="emailError" class="error">email é obrigatório</span> -->
+            <p>Senha</p>
             <input id="password" type="password" placeholder="senha" required>
-            <span id="passwordError" class="error">email é obrigatório</span>
-            <p>Esqueceu sua senha ? <a href="">Clique aqui</a></p>
-            <fieldset>
-                <input type="radio" name="user" id=""><label for="">Aluno</label>
-                <input type="radio" name="user" id=""><label for="">Professor</label>
-            </fieldset>
-            <a href="/studylar-master/home.html">
-                <button type="submit">Entrar</button>
+            <!-- <span id="passwordError" class="error">email é obrigatório</span> -->
+            <div style="display: flex;flex-direction: column; align-items: center; padding: 10px;">
+                <p>Esqueceu sua senha ?</p> <a href="">Clique aqui</a>
+            </div>
+            <div id="fieldset">
+                <div>
+                    <input type="radio" name="user" id=""><label for="">Aluno</label>
+                </div>
+                <div>
+
+                    <input type="radio" name="user" id=""><label for="">Professor</label>
+                </div>
+            </div id="fieldset">
+            <a href="home.html" id="entrar" >
+                Entrar
             </a>
         </form>
     </main>

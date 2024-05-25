@@ -8,16 +8,23 @@
     font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
-    background-color: #ffff;
+    background-color: #fff;
+
 }
 main{
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
-fieldset{
+
+#fieldset{
     display: flex;
-    border: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 form{
     display: flex;
@@ -26,6 +33,16 @@ form{
     width: 100%;
     gap: 1rem;
     justify-content: center;
-    
+
+}
+
+#entrar {
+    padding-inline: 40px;
+    padding-block: 10px;
+    outline: none;
+    border: 1px solid #1a394d;
+    text-decoration: none;
+    color: white;
+    background-color: #FFBC42;
 }
 
